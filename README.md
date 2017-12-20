@@ -1,6 +1,6 @@
 ## Pipelines documentation
 
-[![Build Status](https://build.terradue.com/buildStatus/icon?job=doc-t2-api)](https://build.terradue.com/job/doc-t2-api/)
+[![Build Status](https://build.terradue.com/buildStatus/icon?job=doc-pipelines)](https://build.terradue.com/job/doc-pipelines/)
 
 This is the official repository of the pipelines documentation
 
@@ -24,6 +24,19 @@ sudo conda install sphinxcontrib-plantuml
 ```bash
 $ git config --global user.name <github username>
 $ git config --global user.email <email address>
+```
+
+### Adding submodules
+
+```bash
+git submodule add git@github.com:ec-better/dcs-better-wfp-00001.git source/pipelines/dcs-better-wfp-00001
+```
+
+### Updating the submodules
+
+```bash
+git submodule update --init --recursive
+git submodule foreach git pull origin master
 ```
 
 ### Building locally
