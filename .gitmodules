@@ -1,4 +1,3 @@
 [submodule "source/pipelines/dcs-better-wfp-00001/src"]
-  path = source/pipelines/dcs-better-wfp-00001/src
-  url = git@github.com:ec-better/dcs-better-wfp-00001.git
-  branch = develop
+	path = source/pipelines/dcs-better-wfp-00001/src
+	url = git@github.com:ec-better/dcs-better-wfp-00001.git
