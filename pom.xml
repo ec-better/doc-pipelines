@@ -62,63 +62,6 @@
               </arguments>
             </configuration>
           </execution>
-          <execution>
-            <id>generate-pdf</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <workingDirectory>build/latex</workingDirectory>
-              <executable>pdflatex</executable>
-              <arguments>
-                <argument>-interaction=nonstopmode</argument>
-                <argument>T2API.tex</argument>
-              </arguments>
-              <successCodes>
-                <successCode>0</successCode>
-                <successCode>1</successCode>
-              </successCodes>
-            </configuration>
-          </execution>
-          <execution>
-            <id>generate-pdf2</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <workingDirectory>build/latex</workingDirectory>
-              <executable>pdflatex</executable>
-              <arguments>
-                <argument>-interaction=nonstopmode</argument>
-                <argument>T2API.tex</argument>
-              </arguments>
-              <successCodes>
-                <successCode>0</successCode>
-                <successCode>1</successCode>
-              </successCodes>
-            </configuration>
-          </execution>
-          <execution>
-            <id>generate-pdf3</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <workingDirectory>build/latex</workingDirectory>
-              <executable>pdflatex</executable>
-              <arguments>
-                <argument>-interaction=nonstopmode</argument>
-                <argument>T2API.tex</argument>
-              </arguments>
-              <successCodes>
-                <successCode>0</successCode>
-                <successCode>1</successCode>
-              </successCodes>
-            </configuration>
-          </execution>
         </executions>
       </plugin>
       <plugin>
@@ -135,7 +78,7 @@
             </goals>
             <configuration>
               <descriptors>
-                <descriptor>${basedir}/src/assembly/package-html.xml</descriptor>
+                <descriptor>${basedir}/source/assembly/package-html.xml</descriptor>
               </descriptors>
               <appendAssemblyId>true</appendAssemblyId>
             </configuration>
@@ -147,8 +90,8 @@
         <artifactId>rpm-maven-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
-          <copyright>${inceptionYear}, Terradue</copyright>
-          <distribution>Terradue ${inceptionYear}</distribution>
+         <copyright>${project.inceptionYear}, Terradue</copyright>
+           <distribution>Terradue ${project.inceptionYear}</distribution>
           <group>tag</group>
           <packager>Terradue</packager>
           <name>${project.artifactId}</name>
@@ -162,7 +105,7 @@
           </defineStatements>
           <mappings>
             <mapping>
-              <directory>/var/www/html/t2-api/</directory>
+              <directory>/var/www/html/pipelines/</directory>
               <filemode>755</filemode>
               <sources>
                 <source>
