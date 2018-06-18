@@ -17,6 +17,7 @@ sudo conda install sphinx
 sudo conda install sphinx_bootstrap_theme
 sudo conda install sphinx_rtd_theme
 sudo conda install sphinxcontrib-plantuml
+sudo conda install nbsphinx nbformat
 ```
 
 2) If needed, set your github information:
