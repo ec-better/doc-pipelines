@@ -11,7 +11,8 @@ Welcome to the Pipelines documentation!
 
    overview/index
    pipelines/index 
-
+   test.ipynb
+   
 Indices and tables
 ==================
 
