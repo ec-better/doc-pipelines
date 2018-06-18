@@ -10,8 +10,11 @@ Welcome to the Pipelines documentation!
    :maxdepth: 3
 
    overview/index
+   tutorial/index
    pipelines/index 
    test.ipynb
+   input.ipynb
+   09 Sentinel-1 backscatter profile for reference image used in flood analysis.ipynb
    
 Indices and tables
 ==================

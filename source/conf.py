@@ -45,7 +45,7 @@ extensions = [
 ]
 
 # nbsphinx
-exclude_patterns = ['_build', '**.ipynb_checkpoints']
+exclude_patterns = ['_build', '*.ipynb_checkpoints']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
