@@ -1,5 +1,5 @@
-Welcome to the data pipelines tutorial
-======================================
+Ellip Workflows for data pipelines tutorial
+===========================================
 
 .. toctree::
    :maxdepth: 3
@@ -9,7 +9,12 @@ Welcome to the data pipelines tutorial
    step-2.ipynb
    step-3.ipynb
    step-4.ipynb
-   
+   step-5.ipynb
+   step-6.ipynb
+   step-7.ipynb
+   step-8.ipynb
+   step-9.ipynb
+    
 Indices and tables
 ==================
 
